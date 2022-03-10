@@ -1,0 +1,103 @@
+
+1.Difference between @Controller and @RestController in Spring MVC/BOOT..
+The @Controller is a annotation to mark class as Controller Class in Spring
+ While @RestController is used in REST Web services and similar to @Controller and @ResponseBody.
+The @Controller annotation indicates that the class is controller like web Controller while 
+@RestController annotation indicates that the class is controller where
+ @RequestMapping Method assume @ResponseBody by Default(i.e REST APIs).
+The key difference is that you do not need to use @ResponseBody on each and every handler method once you annotate the class with @RestController.
+@Controller create a Map of Model Object and find a view while @RestController simply return object and object data directly written into http response as JSON orXML.
+This can be also done with @Controller annotation and @ResponseBody annotation but since this is the default behaviour of RESTful Web Services. Spring introduced @RestController which is combined behaviour of @Controller and @ResponseBody together.
+Example
+Following are Example Code which are Equal in Spring.
+@ Controller
+@Controller
+@ResponseBody
+Public class MVCController{
+}
+@ RestController
+@RestController
+public class MVCController{
+}
+====================================================================================================================
+2. How you can consume xml data format.
+=Reading XML file in Java is much different from reading other files like .docx and .txt because XML file contains data between the tags.
+ Java provides many ways to parse an XML file. There are two parsers in Java which parses an XML file:
+
+Java DOM Parser
+Java SAX Parser
+.Step 1: Create a simple Java project.
+Step 2: Create a class file and provide a class file name. We have created the class file with the name ReadXMLFileExample1.
+
+Step 3: Write the following code.
+
+Step 4: Download dom-2.3.0-jaxb-1.0.6.jar file: Click here...
+
+Step 5: Create a lib folder in the project.
+
+Step 6: Copy dom-2.3.0-jaxb-1.0.6.jar file and paste into the lib folder.
+
+Step 7: Set the class path:
+
+Right-click on the project->Build Path->Configure Build Path->Add External JARs->Select the JAR file->click on Open button->Apply and Close.
+
+Step 8: Create an XML file. We have created an XML file with name XMLFile.xml and write the following data into it.
+================================================================================================================================
+3. How you can produse  xml data format.
+4. What is bydefault data formart in webservices...
+=is it xml or json.
+=============
+5.In restfull webservices how can convert json to object and object to json??
+=
+6.How we can manage session in webfull restservies.
+=REST architecture treats every content as a resource. These resources can be Text Files, Html Pages, Images, Videos or Dynamic Business Data.
+ REST Server simply provides access to resources and REST client accesses and modifies the resources. Here each resource is identified by URIs/ Global IDs.
+=====================
+7. How can implemnet  securty in  webservices.
+=Ten ways to secure Web services
+Secure the transport layer. ...
+Implement XML filtering. ...
+Mask internal resources. ...
+Protect against XML denial-of-service attacks. ...
+Validate all messages. ...
+Transform all messages. ...
+Sign all messages. ...
+Timestamp all messages.
+=================================
+8.How did you test Restfull webservices.
+=Steps for Testing REST API
+Step 1) Open Advanced REST client. ...
+Step 2) Enter the URL of API to test. ...
+Step 3) Select the HTTP method. ...
+Step 4) Provide Headers set. ...
+Step 5) Confirm the Headers set. ...
+Step 6) Provide required Body content. ...
+Step 7) Submit the details to start the test.
+======================================
+9.How did you mock Restfull webservices.
+=Creating a Simple Mock
+Create a new REST project in Soap UI following the screens below. Click the REST button on the toolbar (circled in red). ...
+Create a Mock for the REST project. Right-click on the project and select New REST MockService from the menu. ...
+Add a mock response. ...
+Start the mock service. ...
+Test it out!..
+=============================
+10.Waht is fire api in restfull webservices.
+A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with
+ RESTful web services. 
+REST stands for representational state transfer and was created by computer scientist Roy Fielding.
+========================================================
+11. What are varous componets of webservices.
+===================================
+12. what is stream.
+=Introduced in Java 8, the Stream API is used to process collections of objects. A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result.
+The features of Java stream are –
+A stream is not a data structure instead it takes input from the Collections, Arrays or I/O channels.
+Streams don’t change the original data structure, they only provide the result as per the pipelined methods.
+Each intermediate operation is lazily executed and returns a stream as a result, hence various intermediate operations can be pipelined. Terminal operations mark the end of the stream and return the result.
+==============================
+13.What is Mapping.
+=The definition of mapping is making a map, or a matching process where the points of one set are matched against the points of another set.
+The purpose of User Experience Mapping is to understand what customers go through and improve the quality of your customer experience, ensuring 
+consistency and a seamless experience at all touchpoints and across all channels.
+=============================
